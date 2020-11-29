@@ -1,0 +1,437 @@
+*{
+     margin: 0px;
+     padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Scheherazade', serif;
+    direction: rtl;
+}
+.sub-header{
+    font-size: 40px;
+}
+.p{
+    font-size: 20.5px;
+}
+/*****start tool-bar******/
+header section div.tool-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 9px;
+}
+
+.search{
+    border: 1px solid gray;
+    transition: 0.5s all;
+    background-color: black;
+    color: white;
+}
+form label{
+    right: 0px;
+}
+.search:hover{
+    background-color: #C91B68;
+    color: white;
+}
+
+header section div.tool-bar div.links{
+    margin-top: 10px;
+}
+
+header section div.tool-bar div.lang{
+    margin-top: 10px;
+}
+header section div.tool-bar div.lang a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+/*****end tool-bar******/
+
+
+/*****start media tool-bar******/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 608px) {
+    header section div.tool-bar{
+    flex-wrap: wrap;
+    }
+    
+    header section div.tool-bar div.links{
+        width:40%;
+        margin-left:10px;
+    }
+    header section div.tool-bar div.lang{
+        width:40%;
+        margin-left:49px;
+    }
+    header section div.tool-bar div.last{
+        width:70%;
+        margin-right: 95px;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 609px) {
+    header section div.tool-bar{
+    flex-wrap: wrap;
+    }
+    
+    header section div.tool-bar div.links{
+        width:50%;
+        margin-left:40px;
+    }
+    header section div.tool-bar div.lang{
+        width:40%;
+        
+    }
+    header section div.tool-bar div.last{
+        width:70%;
+        margin-right: 60px;
+    }
+    header section div.tool-bar div.last input{
+        width:80%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 680px) {
+     header section div.tool-bar{
+    flex-wrap: nowrap;
+    }
+    
+    header section div.tool-bar div.links{
+        width:35%;
+        margin-left:20px;
+    }
+    header section div.tool-bar div.lang{
+        width:25%;
+    }
+    header section div.tool-bar div.last{
+        width:40%;
+        margin-right: 60px;
+    }
+    header section div.tool-bar div.last input{
+        width:60%;
+    }
+    
+  
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+     header section div.tool-bar{
+     display: flex
+    }
+    
+    header section div.tool-bar div.links{
+        width:35%;
+        margin-left:20px;
+    }
+    header section div.tool-bar div.lang{
+        width:25%;
+    }
+    header section div.tool-bar div.last{
+        width:50%;
+        margin-right: 60px;
+    }
+    header section div.tool-bar div.last input{
+        width:75%;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+       header section div.tool-bar{
+     display: flex
+    }
+    
+    header section div.tool-bar div.links{
+        width:35%;
+        margin-left:20px;
+    }
+    header section div.tool-bar div.lang{
+        width:20%;
+    }
+    header section div.tool-bar div.last{
+        width:40%;
+    }
+    header section div.tool-bar div.last input{
+        width:60%;
+    }
+}
+/*****end media tool-bar******/
+
+/***start navbar******/
+.container2{
+    border-bottom: 1px solid gray;
+}
+
+.navbar{
+    padding: 0px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    font-weight: 600;
+    transition: 0.3s all;
+    margin: 0px 25px 0px 25px ;
+}
+.active{
+    color: #C91B68 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #C91B68;
+}
+.icon{
+   font-size: 23px;    
+}
+/***end navbar******/
+
+/***start slider******/
+
+.carousel-control-next, .carousel-control-prev{
+    background-color: #0000000d;
+}
+/*
+.carousel-item img{
+    height: 900px;
+}*/
+/***end slider******/
+
+
+/***start about******/
+.jumbotron{
+    background-color: transparent;
+}
+.jumbotron .about-header{
+    font-weight: bold;
+}
+.card{
+    border: none;
+}
+.about-us{
+    display: flex;
+    justify-content: space-between;
+}
+.about-us .card img{
+  width: 140px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.about-us .card img:hover{
+   transform: scale(0.9);
+ transition: 1s all; 
+    cursor: pointer;
+}
+.about-us .card .card-body p{
+    line-height: 1.8;
+    font-size: 18px;
+}
+.bold1{
+    font-weight: bold;
+    font-size: 28px;
+}
+.about:hover{
+    text-decoration: none;
+    color: black;
+}
+.about{
+    text-decoration: none;
+    color: black;
+}
+.read{
+    text-decoration: none;
+    color: black;
+}
+.read:hover{
+    text-decoration: none;
+    color:#C91B68 ;
+}
+/***end about ******/
+
+/***start img center ******/
+
+.img-center{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.btn-black{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: .5rem 1.7rem;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    transition: 0.5s all;
+}
+.btn-black:hover{
+    background-color:#C91B68;
+    color: white;
+}
+.img-center-border{
+    border-bottom: 1px solid gray;
+}
+/***end img center ******/
+
+
+/***start what new ******/
+.card{
+    border: none;
+}
+.news-us{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-us .card img:hover{
+   transform: scale(1.05);
+ transition: 1s all; 
+    cursor: pointer;
+}
+.news-us .card .card-body p{
+    line-height: 0.8;
+    font-size: 20px;
+}
+.news-us .card h5{
+    font-weight: 700;
+    
+}
+
+/***end what new ******/
+
+
+/****start contact****/
+.contact{
+    display: flex;
+    border-bottom: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+}
+
+.ani{
+    animation: up 2s infinite;
+}
+@keyframes up{
+        0%{
+        transform: translateY(-10px);
+    }
+    
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.btn-black1{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: .5rem 1.7rem;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    transition: 0.5s all;
+}
+.btn-black1:hover{
+    background-color:#C91B68;
+    color: white;
+}
+textarea.form-control{
+    resize: both;
+    width: auto;
+    height: 100px;
+}
+
+/****end contact****/
+
+/****start our partnar****/
+.ourpart{
+    border-bottom: 1px solid gray;
+    padding-bottom: 25px;
+}
+.partnar:hover{
+    text-decoration: none;
+    color: black;
+}
+.partnar{
+    text-decoration: none;
+    color: black;
+}
+/****end our partnar****/
+
+/****start footer****/
+footer .jumbotron .card-text{
+    width: 327px;
+    line-height: 1.8;
+    margin: auto;
+}
+footer .jumbotron:first-of-type{
+    background-color: transparent;
+    margin: 0px;
+    padding: 18px;
+    margin-top: 59px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon span{
+    margin: 10px;
+}
+.icon span a{
+    color: #C91B68;
+    text-decoration: none;
+}
+.icon span a:hover{
+    color: black !important;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+.icon span a:hover{
+    color: #C91B68;
+    text-decoration: none;
+}
+.copy{
+    margin: 0px;
+    padding: 25px;
+    padding-bottom: 35px;
+}
+
+/****end footer****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
